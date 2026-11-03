@@ -2,17 +2,17 @@
 
     // Ejemplo
     // Archivos a evaluar - files to evaluate
-    const fs = [
-        { id: 1, f: false },
-        { id: 2, f: false },
-        { id: 3, f: true },
-        { id: 4, f: false },
-        { id: 5, f: false },
-        { id: 7, f: true },
+    const filesToEvaluate = [
+        { id: 1, flogged: false },
+        { id: 2, flogged: false },
+        { id: 3, flogged: true },
+        { id: 4, flogged: false },
+        { id: 5, flogged: false },
+        { id: 7, flogged: true },
     ]; 
     
     // Archivos marcados para borrar - files to delete
-    const arhivos = fs.map( f => f.f );
+    const filesToDelete = filesToEvaluate.map( f => f.flogged );
 
     
     class AbstractUser { };
